@@ -1,0 +1,17 @@
+@import url("./assets/styles/global.css");
+@import url("./assets/styles/header.css");
+
+.navbar-secondary {
+  border-top: 1px solid var(--stroke-color);
+  border-bottom: 1px solid var(--stroke-color);
+}
+
+.navbar-secondary ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.4rem 0;
+}
+
+.navbar-secondary ul li a {
+  color: var(--text-color-primary);
+}

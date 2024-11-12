@@ -1,0 +1,19 @@
+.navbar-primary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.navbar-primary h2 {
+  display: flex;
+  gap: 0.8rem;
+  color: var(--text-color-primary);
+}
+
+.navbar-primary p i {
+  font-size: 13px;
+  line-height: 165%;
+  font-weight: 400;
+}
