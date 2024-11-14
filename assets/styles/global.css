@@ -10,9 +10,19 @@
   /* Textos */
   --text-color-primary: #f1f5ff;
   --text-color-secondary: #cbd5e1;
+
+  --font-family: "Archivo", sans-serif;
+  --h1: 800 24px/135% var(--font-family);
+  --h2: 800 16px/140% var(--font-family);
+  --h3: 800 14px/140% var(--font-family);
+  --text-span: 600 14px/145% var(--font-family);
+  --text: 400 16px/140% var(--font-family);
+  --text-sm: 400 14px/160% var(--font-family);
 }
 
-* {
+*,
+::after,
+::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -20,8 +30,6 @@
 
 html {
   font-size: 10px;
-  font-family: "Archivo", sans-serif;
-  background-color: var(--bg-color);
 }
 
 ul,
@@ -29,11 +37,17 @@ li,
 a {
   list-style-type: none;
   text-decoration: none;
+  color: inherit;
 }
 
-.center-body {
-  width: 100%;
-  padding: 0 3.2rem;
+a:hover {
+  color: var(--brand-color-light);
+}
+
+.container{
+  max-width: 1280px;
+  padding-inline: 3.2rem;
+  margin-inline: auto;
 }
 
 main {
@@ -43,38 +57,19 @@ main {
 }
 
 body {
-  h1,
-  .heading1 {
-    font-size: 24px;
-    line-height: 135%;
-    font-weight: 800;
-  }
+  font-family: var(--text);
+  color: var(--text-color-primary);
+  background-color: var(--bg-color);
 
-  h2,
-  .heading2 {
-    font-size: 16px;
-    line-height: 140%;
-    font-weight: 800;
+  h1, h2, h3{
+    font: inherit;
   }
+}
 
-  h3,
-  .heading3 {
-    font-size: 14px;
-    line-height: 145%;
-    font-weight: 800;
-  }
+.grid{
+  display: grid;
+}
 
-  span,
-  .span {
-    font-size: 14px;
-    line-height: 145%;
-    font-weight: 600;
-  }
-
-  p,
-  .paragraph {
-    font-size: 14px;
-    line-height: 165%;
-    font-weight: 400;
-  }
+.grid-flow-col{
+  grid-auto-flow: column;
 }

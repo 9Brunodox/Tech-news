@@ -1,19 +1,24 @@
-.navbar-primary {
-  display: flex;
+#primary{
+  padding-block: 2rem;
+
+  div{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+  }
+
+  div:nth-child(2){
+    margin-inline: auto;
+  }
+
+  div:nth-child(3){
+    justify-self: end;
+  }
+}
+
+#secondary{
+  padding-block: 1.4rem;
+  border: 1px solid var(--stroke-color);
+  border-inline: none;
   justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.navbar-primary h2 {
-  display: flex;
-  gap: 0.8rem;
-  color: var(--text-color-primary);
-}
-
-.navbar-primary p i {
-  font-size: 13px;
-  line-height: 165%;
-  font-weight: 400;
 }
