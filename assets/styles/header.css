@@ -21,4 +21,8 @@
   border: 1px solid var(--stroke-color);
   border-inline: none;
   justify-content: space-between;
+
+  a{
+    font: var(--text-sm);
+  }
 }

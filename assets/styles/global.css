@@ -30,6 +30,7 @@
 
 html {
   font-size: 10px;
+  font-family: var(--font-family);
 }
 
 ul,
@@ -44,6 +45,10 @@ a:hover {
   color: var(--brand-color-light);
 }
 
+img{
+  max-width: 100%;
+}
+
 .container{
   max-width: 1280px;
   padding-inline: 3.2rem;
@@ -54,6 +59,7 @@ main {
   display: grid;
   grid-template-rows: 15% 85%;
   gap: 4rem;
+  margin-top: 4rem;
 }
 
 body {
@@ -66,10 +72,15 @@ body {
   }
 }
 
-.grid{
-  display: grid;
+.content-tag{
+  display: inline-block;
+  background-color: var(--brand-color-dark);
+  padding: .4rem .8rem;
+  border-radius: 4px;
+  font: 500 10px/1.2 var(--font-family);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-color-primary);
+  box-shadow: 0px 4px 16px rgba(2, 6, 23, 0.25);
 }
-
-.grid-flow-col{
-  grid-auto-flow: column;
-}
+ 
