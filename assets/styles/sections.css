@@ -2,6 +2,24 @@ section header {
   border-top: 1px solid var(--stroke-color);
   padding-block: 1.2rem 2.4rem;
   font: var(--text-span);
+
+  a {
+    justify-self: end;
+    align-items: center;
+    gap: 0.8rem;
+
+    span {
+      background-image: url(../icons/ArrowRight.svg);
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 15px;
+    }
+
+    &:hover span {
+      background-image: url(../icons/ArrowRight-Hover.svg);
+      background-repeat: no-repeat;
+    }
+  }
 }
 
 #featured {
@@ -40,25 +58,26 @@ section header {
 }
 
 #weekly {
-  header a {
-    display: grid;
-    justify-self: end;
-    align-items: center;
-
-    span {
-      background-image: url(../icons/ArrowRight.svg);
-      background-repeat: no-repeat;
-      width: 15px;
-      height: 15px;
-      justify-content: center;
-    }
-  }
-
   & > div {
     grid-template-columns: repeat(4, 1fr);
   }
 
   img {
     height: 16rem;
+  }
+
+  figure {
+    position: relative;
+
+    .content-tag {
+      position: absolute;
+      top: 0.8rem;
+      left: 0.8rem;
+    }
+
+    p {
+      margin-top: 0.8rem;
+      font-weight: 800;
+    }
   }
 }
